@@ -1,0 +1,59 @@
+<html>
+
+<head>
+  <title>Form</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="form-box">
+      <h1 style="color: blue;text-align: center;">
+    <b>Registration Form</b></h1>
+      <form id="form">
+        <div id="username" class="inputs">
+          <label for="name"><b>Name</b></label>
+          <input type="text" required id="name" name="name" placeholder="enter your name" required/>
+        </div>
+        <div id="emailid" class="inputs">
+          <label for="email"><b>Email<b>
+          </b>
+        </label>
+          <input type="email"required id="email" name="email" placeholder="enter your email" required />
+        </div>
+        <div id="passwd" class="inputs">
+          <label for="password"><b>Password</b>
+        </label>
+          <input type="password" required id="password" name="password" placeholder="enter your password" required/>
+        </div>
+        <div id="dob_id" class="inputs">
+          <label for="dob"><b>Date of Birth</b>
+        </label>
+          <input id="dob" name="dob" type="date" required/>
+        </div>
+        <div id="agree">
+          <input id="tc" type="checkbox" style="color: aquamarine;"> <b>I have read and agree to the terms and conditions.</b>
+        </input>
+        </div>
+        <button style="text-decoration: aqua;text-align:left;background-color:skyblue;" id="submit" type="submit"><b>Submit</b></button>
+      </form>
+    </div>
+    <div id="table-box">
+        <h2 style="text-align: center;color:rgb(0, 42, 100);"><b>Entries</b></h2>
+        <table id="user-table">
+          <tr>
+            <th>Name</th>
+            <th>Email Id</th>
+            <th>Password</th>
+            <th>Date of Birth</th>
+            <th>Accepted terms?</th>
+        
+        </table>
+      </div>
+  </div>
+
+
+<script src="index.js"></script>
+</body>
+
+</html>
