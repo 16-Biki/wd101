@@ -13,7 +13,7 @@ function Table() {
   }
   return user_entries;
 }
-user_entries =Table();
+user_entries = Table();
 
 let username = element("name"),
   email = element("email"),
@@ -36,7 +36,7 @@ function verify(elem, message, cnd) {
   }
 }
 
-function checkB() {
+function checkDOB() {
   let age = new Date().getFullYear() - new Date(dob.value).getFullYear();
   if (age < 18 || age > 55) {
     return false;
@@ -62,7 +62,7 @@ email.addEventListener("input", (e) => {
 });
 
 dob.addEventListener("input", (e) => {
-  let cond_dob = !checkB();
+  let cond_dob = !checkDOB();
   e.preventDefault();
   verify(dob, message_dob, cond_dob);
 });
